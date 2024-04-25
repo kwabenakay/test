@@ -1,4 +1,5 @@
 export const data = {
+  user: [{ email: 'nskwbn@gmail.com', password: '123', id: '1' }],
   overview: {
     totalCampaigns: 33,
     successfulCampaign: 30,

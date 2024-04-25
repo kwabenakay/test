@@ -1,7 +1,9 @@
-import { Controller, Get, Param } from '@nestjs/common';
+import { Controller, Get, Param, UseGuards } from '@nestjs/common';
 import { AppService } from './app.service';
+import { AuthGuard } from './modules/Auth/auth.guard';
 
 @Controller()
+@UseGuards(AuthGuard)
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
@@ -39,7 +41,6 @@ export class AppController {
   chatsById(@Param('chatId') id: string) {
     return this.appService.getChatById(id);
   }
-
   // @Get(':test')
   // test(@Param('test') test: string): string {
   //   return `params test value is ${test}`;
