@@ -14,6 +14,9 @@ export class BaseUserDto {
   readonly firstName: string;
 
   @IsString()
+  readonly phoneNumber: string;
+
+  @IsString()
   @IsNotEmpty()
   readonly lastName: string;
 

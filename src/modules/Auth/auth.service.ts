@@ -18,11 +18,11 @@ export class AuthService {
   public async login(loginData: LoginDto) {
     const user = await this.userRepo.findOneBy({ email: loginData.email });
     if (user && (await isPasswordValidate(loginData.password, user.password))) {
-      const { id, email, firstName, lastName, profile } = user;
+      const { id, email, firstName, lastName, profile, phoneNumber } = user;
       const token = await this.generateToken(id, email);
       return {
         success: true,
-        data: { id, email, firstName, lastName, token, profile },
+        data: { id, email, firstName, lastName, token, profile, phoneNumber },
       };
     }
     throw new HttpException(

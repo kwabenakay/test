@@ -9,39 +9,39 @@ export const data = {
   operators: [
     {
       name: 'Omakar',
-      role: 'Admin',
+      platform: 'website',
     },
     {
       name: 'Ravi Krishna',
-      role: 'User',
+      platform: 'Tiktok',
     },
     {
       name: 'Sai Manohar',
-      role: 'User',
+      platform: 'Youtube',
     },
     {
       name: 'Sai Krishna',
-      role: 'User',
+      platform: 'User',
     },
     {
       name: 'Ravi Manohar',
-      role: 'User',
+      platform: 'Twitch',
     },
     {
       name: 'Omakar Krishnar',
-      role: 'User',
+      platform: 'Youtube',
     },
     {
       name: 'Omakar Manohar',
-      role: 'User',
+      platform: 'X',
     },
     {
       name: 'Jhanavi',
-      role: 'User',
+      platform: 'Twitch',
     },
     {
       name: 'Omakar Jhanavi',
-      role: 'User',
+      platform: 'X',
     },
   ],
   'top-conversations': [

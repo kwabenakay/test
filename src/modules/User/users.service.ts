@@ -52,6 +52,7 @@ export class UserService {
       email: 'kofi@gmail.com',
       password: '12345',
       profile: '',
+      phoneNumber: '',
     });
     console.log(rep);
     return 'Hello World!';
